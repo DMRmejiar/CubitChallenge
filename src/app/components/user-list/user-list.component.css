@@ -1,0 +1,29 @@
+.list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: auto;
+    margin-top: 20px;
+}
+
+.list table {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+.list table th {
+    width: 25%;
+}
+
+.list table .action {
+    cursor: pointer;
+}
+
+.list .paginator {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: baseline;
+}

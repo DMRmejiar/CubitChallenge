@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.card .card-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 2px;
+}
+
+.card .card-col {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 3px;
+    padding: 2px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0px 5px 0px;
+}
+
+.card h1 {
+    text-align: center;
+}
