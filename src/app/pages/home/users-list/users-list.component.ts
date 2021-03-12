@@ -5,12 +5,11 @@ import { UsersService } from 'src/app/services/users.service';
 import { UserDetailComponent } from '../user-detail/user-detail.component';
 
 @Component({
-  selector: 'app-user-list',
-  templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.css']
+  selector: 'app-users-list',
+  templateUrl: './users-list.component.html',
+  styleUrls: ['./users-list.component.css']
 })
-export class UserListComponent implements OnInit {
-
+export class UsersListComponent implements OnInit {
   displayedColumns: string[];
   request: Request;
   pageSizeOptions: number[];
@@ -35,7 +34,7 @@ export class UserListComponent implements OnInit {
   }
 
   onViewUser(pId: number) {
-    this.usersService.getById(pId + 1)
+    this.usersService.getById(pId)
       .then((data) => {
         console.log(data.data);
         const dialogRef = this.dialog.open(UserDetailComponent, {
@@ -46,12 +45,12 @@ export class UserListComponent implements OnInit {
       .catch((error) => console.log(error));
   }
 
-  updatePage(pPage: number) {
-    this.usersService.getByPage(pPage)
-      .then((req) => {
-        this.request = req;
-      })
-      .catch((error) => console.log(error));
+  async updatePage(pPage: number) {
+    try {
+      this.request = await this.usersService.getByPage(pPage);
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   onChangePage($event: any) {

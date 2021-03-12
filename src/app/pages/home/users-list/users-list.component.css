@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+table th {
+    width: 25%;
+}
+
+table .action {
+    cursor: pointer;
+}
+
+.paginator {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: baseline;
+}

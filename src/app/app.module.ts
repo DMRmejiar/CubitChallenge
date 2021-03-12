@@ -11,18 +11,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { UserListComponent } from './components/user-list/user-list.component';
-import { QuestionsComponent } from './components/questions/questions.component';
+import { QuestionsComponent } from './pages/questions/questions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { HomeComponent } from './pages/home/home.component';
+import { UsersListComponent } from './pages/home/users-list/users-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UserListComponent,
     QuestionsComponent,
-    UserDetailComponent
+    HomeComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
