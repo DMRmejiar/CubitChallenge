@@ -35,7 +35,7 @@ export class UserListComponent implements OnInit {
   }
 
   onViewUser(pId: number) {
-    this.usersService.getById(pId + 1)
+    this.usersService.getById(pId)
       .then((data) => {
         console.log(data.data);
         const dialogRef = this.dialog.open(UserDetailComponent, {
