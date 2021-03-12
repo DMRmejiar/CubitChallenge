@@ -1,0 +1,13 @@
+.home-page {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: auto;
+    margin-top: 20px;
+}
+
+.home-page h1 {
+    width: 100%;
+    text-align: center;
+}

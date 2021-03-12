@@ -1,6 +1,7 @@
 <section class="card">
     <h1 mat-dialog-title>{{ data.first_name }} {{ data.last_name }}</h1>
-    <mat-dialog-content class="mat-typography card-row">
+
+    <div mat-dialog-content class="mat-typography card-row">
         <div class="card-col">
             <img [src]="data.avatar">
         </div>
@@ -10,5 +11,5 @@
             <h2>E-mail:</h2>
             <p>{{ data.email }}</p>
         </div>
-    </mat-dialog-content>
+    </div>
 </section>
