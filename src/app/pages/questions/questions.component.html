@@ -26,8 +26,10 @@
     <div class="element">
         <h2>Manejo de estados de las variables dentro de un componente y las funcionalidades de los componentes</h2>
         <p>
-            Vivamus sit amet tincidunt ante. Sed eros lorem, elementum quis interdum vitae, sagittis a lectus. Pellentesque mattis mauris vitae maximus aliquam. Vivamus eu mi tincidunt, posuere nulla nec, tincidunt nisl. Donec aliquam blandit erat congue maximus.
-            Nam quis libero mauris. Morbi gravida nibh id sollicitudin hendrerit. Donec pretium velit ante, eget tincidunt orci porttitor nec. Proin at ullamcorper tortor.
+            Los componentes en angular funcionan como clases solo que también poseen un ciclo de vida compuesto por su constructor, OnInit, AfterContentinit, AfterViewInit, OnDestroy y algunos pertenecientes al ciclo de detección de cambios como el OnChange, durante
+            estas partes del ciclo se pueden modificar y alterar variables pertenecientes a la clase (componente), algunas de las formas de modificar estas variables es implementando el decorador @Input para que la variable se modifique con un valor que
+            se envía cuando se va a crear el componente, mediante Observable, para estar verificando si llega a haber algún cambio, en ocasiones Pipes, para darle un formato a la variable antes de ser mostrada en alguna parte de la vista del componente,
+            o implementando otras librerías para la administración su administración como ngrx.
         </p>
 
     </div>
