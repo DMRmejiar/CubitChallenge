@@ -1,0 +1,36 @@
+<div class="questions">
+    <h1>Preguntas</h1>
+    <div class="element">
+        <h2>¿Qué permite la implementación de un interceptor?</h2>
+        <p>
+            Los interceptor permiten evitar la repetición de código en las múltiples llamadas http que se realizan, por ejemplo, en los headers o parámetros que se envían en las request y el manejo de errores de las mismas.
+        </p>
+
+    </div>
+    <div class="element">
+        <h2>¿Cuándo implementar un guard?</h2>
+        <p>
+            Los guard se utilizan para limitar quien puede y quien no puede acceder a ciertos puntos de la app web, permitiendo proteger ciertas rutas.
+        </p>
+
+    </div>
+    <div class="element">
+        <h2>¿Qué son una prueba unitaria, una prueba de servicio y una prueba de componente?</h2>
+        <p>
+            Una prueba unitaria, es un test que realiza sobre una función, método o funcionalidad en específico, en ocasiones es necesario realizar múltiples pruebas unitarias sobre una misma función para abarcar todas las posibilidades, una prueba de servicio realiza
+            test a las múltiples funciones de un servicio a diferencia de una pruebas unitaria que solo se enfoca a un único método, adicionalmente una prueba de servicio también puede simular respuestas de peticiones http, y por ultimo una prueba de
+            componente, es un test donde se renderiza un componente y se prueba su funcionalidad, puede probar que si se presiona un botón del componente este realice los cambios o ejecute la función correspondiente a este, y que los cambios se vean reflejados.
+        </p>
+
+    </div>
+    <div class="element">
+        <h2>Manejo de estados de las variables dentro de un componente y las funcionalidades de los componentes</h2>
+        <p>
+            Los componentes en angular funcionan como clases solo que también poseen un ciclo de vida compuesto por su constructor, OnInit, AfterContentinit, AfterViewInit, OnDestroy y algunos pertenecientes al ciclo de detección de cambios como el OnChange, durante
+            estas partes del ciclo se pueden modificar y alterar variables pertenecientes a la clase (componente), algunas de las formas de modificar estas variables es implementando el decorador @Input para que la variable se modifique con un valor que
+            se envía cuando se va a crear el componente, mediante Observable, para estar verificando si llega a haber algún cambio, en ocasiones Pipes, para darle un formato a la variable antes de ser mostrada en alguna parte de la vista del componente,
+            o implementando otras librerías para la administración su administración como ngrx.
+        </p>
+
+    </div>
+</div>

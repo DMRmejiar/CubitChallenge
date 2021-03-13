@@ -1,0 +1,23 @@
+.questions {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.questions h1 {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.questions .element {
+    width: 40%;
+}
+
+.questions .element h2 {
+    font-size: 26px;
+}

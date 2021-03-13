@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    cursor: pointer;
+    font-size: 30px;
+    padding-top: 14px;
+}
+
+.header .logo img {
+    height: 50px;
+    width: auto;
+    margin-top: -15px;
+}
