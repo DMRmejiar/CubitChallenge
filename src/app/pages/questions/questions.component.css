@@ -16,6 +16,7 @@
 
 .questions .element {
     width: 40%;
+    margin: 10px;
 }
 
 .questions .element h2 {
